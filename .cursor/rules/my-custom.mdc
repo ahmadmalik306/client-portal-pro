@@ -1,0 +1,22 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+Project structure
+Always create separate folder for backend and frontend and other services
+Before Implementing a code section, search codebase for any reusable component/hook or anything reusable 
+Always use named import like
+"export const"
+In frontend:
+-- Use the following structure in src
+----- components folder for reusable components
+----- hooks folder for reusable hooks
+----- containers folder for business logic using components
+----- types folder for type definitions
+----- utils folder for reusable funtions
+----- pages folders for calling container components and are used in routes
+----- routes folder for routing
+Always create a page mobile responsive
+In Backend
+------ Use .graphql for typeDefs

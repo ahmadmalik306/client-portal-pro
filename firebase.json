@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": ".next",
+    "site": "protfolio-f0e58",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+scalar Date
+
+enum Role {
+  ADMIN
+  STAFF
+  CLIENT
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  role: Role!
+  projects: [Project!]
+  createdAt: Date
+  updatedAt: Date
+}
+
+type Project {
+  id: ID!
+  name: String!
+  description: String
+  tasks: [Task!]
+  client: User!
+  staff: [User!]
+  files: [String]
+  createdAt: Date
+  updatedAt: Date
+}
+
+type Task {
+  id: ID!
+  title: String!
+  description: String
+  status: String
+  dueDate: Date
+  project: Project!
+  feedback: String
+  createdAt: Date
+  updatedAt: Date
+}
+
+type Message {
+  id: ID!
+  sender: User!
+  recipient: User!
+  content: String!
+  createdAt: Date
+}
+
+type Invoice {
+  id: ID!
+  project: Project!
+  amount: Float!
+  status: String!
+  issuedAt: Date
+  paidAt: Date
+}
+
+type Query {
+  me: User
+  users: [User!]
+  user(id: ID!): User
+  projects: [Project!]
+  project(id: ID!): Project
+  tasks(projectId: ID): [Task!]
+  task(id: ID!): Task
+  messages(projectId: ID): [Message!]
+  invoices(projectId: ID): [Invoice!]
+}
+
+type Mutation {
+  createUser(name: String!, email: String!, role: Role!): User!
+  updateUser(id: ID!, name: String, email: String, role: Role): User!
+  deleteUser(id: ID!): Boolean!
+
+  createProject(name: String!, description: String, clientId: ID!): Project!
+  updateProject(id: ID!, name: String, description: String): Project!
+  deleteProject(id: ID!): Boolean!
+
+  createTask(projectId: ID!, title: String!, description: String, dueDate: Date): Task!
+  updateTask(id: ID!, title: String, description: String, status: String, dueDate: Date): Task!
+  deleteTask(id: ID!): Boolean!
+
+  sendMessage(projectId: ID!, recipientId: ID!, content: String!): Message!
+
+  createInvoice(projectId: ID!, amount: Float!): Invoice!
+  payInvoice(id: ID!): Invoice!
+} 

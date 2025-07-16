@@ -1,0 +1,76 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+Project description:
+If your goal is to **stand out on Upwork as a full-stack developer**, you need a project idea that:
+
+1. **Solves real problems** businesses face.
+2. **Highlights your full-stack abilities** (especially in GraphQL, Firebase, Next.js, etc.).
+3. Is **tangible** enough for clients to imagine hiring you to build it for them.
+
+---
+
+## 💼 **Better Upwork-Friendly Project Idea: “ClientPortalPro” – Client Portal SaaS Template**
+
+> 🎯 A fully-featured white-label **Client Portal** for service-based businesses (agencies, coaches, freelancers).
+
+### 🔥 Why it's perfect for Upwork
+
+* Businesses frequently request **client portals** (secure login, shared files, task updates, etc.).
+* You can **reuse this** as a boilerplate for Upwork jobs.
+* Clients **instantly understand its value** (vs. a dev-only platform like DevLink).
+
+---
+
+## 🌟 Key Features
+
+| Section             | Features                                         |
+| ------------------- | ------------------------------------------------ |
+| **Authentication**  | Firebase Auth (Google + Email)                   |
+| **Dashboard**       | Personalized dashboard with notifications        |
+| **Projects/Tasks**  | View tasks, project timeline, feedback requests  |
+| **File Uploads**    | Securely upload/download documents               |
+| **Messaging**       | Internal chat (Firebase or Apollo Subscriptions) |
+| **Billing**         | Invoices + payment history (Stripe or mockup)    |
+| **Roles**           | Admin, Staff, Client access levels               |
+| **Mobile-friendly** | Optimized with Tailwind & MUI                    |
+
+---
+
+## 🔧 Tech Stack Usage
+
+| Tech                     | Role                                         |
+| ------------------------ | -------------------------------------------- |
+| **Next.js**              | SSR dashboard pages                          |
+| **TailwindCSS + ShadCN** | Modern, clean UI                             |
+| **Material UI**          | Tables, modals, form components              |
+| **Node.js + Express**    | Custom API endpoints                         |
+| **Apollo + GraphQL**     | Unified data fetching                        |
+| **Firebase**             | Auth + optional real-time chat               |
+| **SQL (Sequelize)**      | Project/task/invoice models                  |
+| **MongoDB**              | Chat logs, notifications, user activity logs |
+
+---
+
+## 📸 Sample Pages You Can Build
+
+1. **Client Dashboard**
+2. **Project Overview**
+3. **Message Center**
+4. **Invoice History**
+5. **Team Management**
+6. **Profile & Settings**
+7. **Admin Panel**
+
+---
+
+## 🎁 Bonus Value
+
+* Package it as a **template for agencies** → Sell on Gumroad or use as a lead magnet.
+* Create **Upwork proposal demos** using it (“Here's what I can build you in 2 weeks…”).
+* Publish a blog: *"How I Built a Scalable Client Portal with Firebase + GraphQL + Next.js."*
+
+---
